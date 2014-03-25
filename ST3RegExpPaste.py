@@ -7,7 +7,7 @@ class myfuncRegCommand(sublime_plugin.TextCommand):
 
         for region in self.view.sel():
             txt = sublime.get_clipboard()
-            esc_txt = re.sub(r'([\.\\\+\*\?\[\^\]\$\(\)\{\}\=\!\|\:])', r'\\\1', txt)
+            esc_txt = re.sub(r'([\.\\\+\*\?\[\^\]\$\(\)\{\}\=\!\|])', r'\\\1', txt)
 
             #クオート内を何でもありにする
             #いらなかったらコメントアウトしてください
