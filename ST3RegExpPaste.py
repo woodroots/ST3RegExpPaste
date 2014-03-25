@@ -2,7 +2,6 @@ import sublime
 import sublime_plugin
 import re
 
-#TXS
 class myfuncRegCommand(sublime_plugin.TextCommand):
     def run(self, edit):
 
